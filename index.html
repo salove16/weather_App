@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salove weather Forcast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+
+        }
+
+        #container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .nav {
+            height: 5%;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            background-color: black
+        }
+
+        .nav input {
+            /* color: white; */
+            font-weight: bold;
+            width: 15%;
+            background-color: white;
+            font-size: larger;
+
+
+        }
+
+        .nav button {
+            background-color: white;
+            width: 5%;
+
+
+        }
+
+
+        .bot {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            /* background-color: aqua; */
+            justify-content: space-evenly;
+            margin-top: 1%;
+        }
+
+        .right {
+            height: 90%;
+            width: 30%;
+            background-color: azure;
+            margin-top: 1%;
+        }
+
+        .left {
+            height: 80%;
+            width: 30%;
+            /* background-color: blueviolet; */
+            margin-top: 1%;
+            text-align: left;
+            font-size: xx-large;
+            color: white;
+        }
+
+        .left h3,
+        img {
+            text-align: center;
+        }
+
+        .left>h3,
+        h4,
+        h5,
+        h6 {
+            margin: 2%;
+        }
+
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 90%;
+            width: 30%;
+            overflow: hidden;
+            margin: 1%;
+        }
+
+        .gmap_canvas {
+            /* overflow: hidden; */
+            background: none !important;
+            /* height: 500px;
+            width: 600px; */
+        }
+
+        .last {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /* grid-gap: 60px; */
+            /* background-color: aqua; */
+            height: 25%;
+            width: 60%;
+            margin: auto;
+
+        }
+
+        .last div {
+            /* background-color: rgb(32, 31, 31); */
+            /* filter:drop-shadow(); */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            color: white;
+            text-align: center;
+            /* margin: 20px; */
+            padding-top: 10%;
+            overflow: hidden;
+
+        }
+
+        #container>h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Salove Weather Forcast</h1>
+        <div class="nav">
+            <input type="text" name="" id="cityName" placeholder="City Name">
+            <button onclick="searchWeather()">Search</button>
+        </div>
+        <div class="bot">
+            <div class="left"></div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://123movies-to.org"></a><br></div>
+            </div>
+        </div>
+        <div class="last">
+      
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="index.js"></script>
