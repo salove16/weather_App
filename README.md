@@ -4,6 +4,7 @@ Its a simple weather app which gives next 7 day forecaste including present day
 deployed link- https://remarkable-lamington-f89f26.netlify.app/
 # How to run the project locally:
 - Type the following in your terminal: git clone https://github.com/salove16/weather_App.git
+- Live the server in Vscode.
 
 # Objectives
 - Clone UI of the Weather forecast
